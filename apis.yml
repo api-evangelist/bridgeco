@@ -1,22 +1,75 @@
 aid: bridgeco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bridgeco.png
 name: Bridgeco
-description: Bridgeco is a company surfaced as a portfolio company of earlybird and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'BridgeCo Inc. was a fabless semiconductor company founded in 2000 that
+  built networked-audio silicon and software for consumer electronics. Its JukeBlox
+  platform — a system-on-a-chip paired with a software development kit — let wireless
+  speakers, A/V receivers, home-theater systems and docking stations stream music from
+  tablets, smartphones and PCs, and was designed into products from Pioneer, Philips,
+  Denon, Marantz, JBL and Harman/Kardon. Earlybird Venture Capital was the company''s
+  first institutional investor in 2000. BridgeCo was acquired by Standard Microsystems
+  Corporation (SMSC) on 19 May 2011 in a deal worth up to $67.5 million, and SMSC was
+  in turn acquired by Microchip Technology on 2 August 2012, where the JukeBlox wireless-audio
+  line was folded into Microchip''s portfolio. BridgeCo no longer operates as an independent
+  company and publishes no developer portal, documentation or public API; the bridgeco.com
+  domain today is an unrelated domain-for-sale parking page.'
 url: https://raw.githubusercontent.com/api-evangelist/bridgeco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - earlybird
+x-status: acquired
+x-acquired-by: Standard Microsystems Corporation (SMSC)
+x-acquired-date: '2011-05-19'
+x-successor: Microchip Technology
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Semiconductors
+- Consumer Electronics
+- Audio
+- Wireless Audio
+- Music Streaming
+- Embedded Systems
+- Acquired
 apis: []
+common:
+- type: InvestorProfile
+  name: Earlybird portfolio profile
+  url: https://earlybird.com/companies/bridgeco
+- type: Crunchbase
+  name: Crunchbase profile
+  url: https://www.crunchbase.com/organization/bridgeco
+- type: Acquisition
+  name: SMSC acquires BridgeCo Inc.
+  url: https://www.kroll.com/en/transactions/smsc-acquires-bridgeco
+- type: Acquisition
+  name: Earlybird Venture Capital exits BridgeCo to SMSC
+  url: https://www.prnewswire.com/news-releases/earlybird-venture-capital-exits-bridgeco-to-smsc-122302168.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: Company acquired by SMSC in 2011 and absorbed into Microchip in 2012; no live
+    developer surface, no API, no artifacts producible without fabrication.
